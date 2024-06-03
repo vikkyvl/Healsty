@@ -1,0 +1,3978 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>907</width>
+    <height>580</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Healsty</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 253, 254);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>900</width>
+     <height>453</height>
+    </size>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="1" rowspan="4">
+     <widget class="QLabel" name="label_imageApp">
+      <property name="styleSheet">
+       <string notr="true">image: url(:/resource/PngItem_2922913 (1).png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1" rowspan="2">
+     <widget class="QPushButton" name="nutritionTrackerPushButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>10</pointsize>
+        <italic>false</italic>
+        <stylestrategy>PreferDefault</stylestrategy>
+        <hintingpreference>PreferDefaultHinting</hintingpreference>
+        <fontweight>Black</fontweight>
+       </font>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::DefaultContextMenu</enum>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;“Happiness depends upon ourselves.” – Aristotle&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#nutritionTrackerPushButton {
+float: right;
+border-bottom: 4px solid rgb(218, 218, 218);
+font: 900 10pt &quot;Arial Black&quot;;
+margin-right: 3%;
+margin-top: 5px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+padding: 5px 9px;
+font-size: 1.2em;
+background-color: rgb(246, 246, 246);
+text-shadow: #454545 0 0 2px;
+color: rgb(38, 50, 56);
+}
+QPushButton#nutritionTrackerPushButton:pressed {
+background-color: rgb(218, 218, 218);
+border-style: inset;
+}</string>
+      </property>
+      <property name="text">
+       <string>Nutrition
+ Tracker</string>
+      </property>
+      <property name="icon">
+       <iconset resource="things.qrc">
+        <normaloff>:/resource/salad.png</normaloff>:/resource/salad.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QPushButton" name="homePushButton">
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>10</pointsize>
+        <italic>false</italic>
+        <fontweight>Black</fontweight>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#homePushButton {
+float: right;
+border-bottom: 4px solid rgb(218, 218, 218);
+font: 900 10pt &quot;Arial Black&quot;;
+margin-right: 3%;
+margin-top: 5px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+padding: 5px 9px;
+font-size: 1.2em;
+background-color: rgb(246, 246, 246);
+text-shadow: #454545 0 0 2px;
+color: rgb(38, 50, 56);
+}
+QPushButton#homePushButton:pressed {
+background-color: rgb(218, 218, 218);
+border-style: inset;
+}</string>
+      </property>
+      <property name="text">
+       <string>HOME</string>
+      </property>
+      <property name="icon">
+       <iconset resource="things.qrc">
+        <normaloff>:/resource/home.png</normaloff>:/resource/home.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>35</width>
+        <height>35</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLabel" name="label_nameApp">
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>16</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#263238;&quot;&gt;HEALSTY&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="1" rowspan="2">
+     <widget class="QPushButton" name="personalOverviewPushButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>10</pointsize>
+        <italic>false</italic>
+        <fontweight>Black</fontweight>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;“Take care of yourself, be healthy, and always believe you can be successful in anything you truly want.” – Alessandra Ambrosio&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#personalOverviewPushButton {
+float: right;
+border-bottom: 4px solid rgb(218, 218, 218);
+font: 900 10pt &quot;Arial Black&quot;;
+margin-right: 3%;
+margin-top: 5px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+padding: 5px 9px;
+font-size: 1.2em;
+background-color: rgb(246, 246, 246);
+text-shadow: #454545 0 0 2px;
+color: rgb(38, 50, 56);
+}
+QPushButton#personalOverviewPushButton:pressed {
+background-color: rgb(218, 218, 218);
+border-style: inset;
+}
+
+</string>
+      </property>
+      <property name="text">
+       <string>Personal 
+Overview</string>
+      </property>
+      <property name="icon">
+       <iconset resource="things.qrc">
+        <normaloff>:/resource/heart-rate.png</normaloff>:/resource/heart-rate.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="1" rowspan="2">
+     <widget class="QPushButton" name="sportPushButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>10</pointsize>
+        <italic>false</italic>
+        <fontweight>Black</fontweight>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;“If you want to live a happy life, tie it to a goal, not to people or things.” – Albert Einstein&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#sportPushButton {
+float: right;
+border-bottom: 4px solid rgb(218, 218, 218);
+font: 900 10pt &quot;Arial Black&quot;;
+margin-right: 3%;
+margin-top: 5px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+padding: 5px 9px;
+font-size: 1.2em;
+background-color: rgb(246, 246, 246);
+text-shadow: #454545 0 0 2px;
+color: rgb(38, 50, 56);
+}
+QPushButton#sportPushButton:pressed {
+background-color: rgb(218, 218, 218);
+border-style: inset;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Sport</string>
+      </property>
+      <property name="icon">
+       <iconset resource="things.qrc">
+        <normaloff>:/resource/resistance-band.png</normaloff>:/resource/resistance-band.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2" rowspan="12">
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page_home">
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QWidget" name="widget_5" native="true">
+          <property name="styleSheet">
+           <string notr="true">image: url(:/resource/Healthy lifestyle-pana.png);</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_6" native="true">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(245, 245, 245);
+border-radius: 20px;</string>
+          </property>
+          <widget class="QWidget" name="layoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>20</y>
+             <width>361</width>
+             <height>65</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_10">
+            <item>
+             <widget class="QLabel" name="label_7">
+              <property name="font">
+               <font>
+                <family>Arial Black</family>
+                <pointsize>21</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(38, 50, 56);</string>
+              </property>
+              <property name="text">
+               <string>Welcome</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_8">
+              <property name="font">
+               <font>
+                <family>Arial Black</family>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(38, 50, 56);</string>
+              </property>
+              <property name="text">
+               <string>Join with Us &amp; Enjoy Healthy Life</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QLabel" name="label_38">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>100</y>
+             <width>361</width>
+             <height>61</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Arial Black</family>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(38, 50, 56);</string>
+           </property>
+           <property name="text">
+            <string>Our program is designed to help 
+you achieve your wellness goals through easy and 
+effective tracking tools.</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QWidget" name="layoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>11</x>
+             <y>170</y>
+             <width>341</width>
+             <height>321</height>
+            </rect>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_13">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_25">
+              <property name="styleSheet">
+               <string notr="true">image: url(:/resource/diet (1).png);</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLabel" name="label_39">
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <italic>false</italic>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(38, 50, 56);</string>
+              </property>
+              <property name="text">
+               <string>Keep track of everything you eat throughout 
+the day, along with detailed information 
+on calories, proteins, fats, and 
+carbohydrates (Kcal, BJU). 
+This feature helps you understand
+your dietary habits and make healthier choices.</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_35">
+              <property name="styleSheet">
+               <string notr="true">image: url(:/resource/sport.png);</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QLabel" name="label_40">
+              <property name="font">
+               <font>
+                <family>Arial</family>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(38, 50, 56);</string>
+              </property>
+              <property name="text">
+               <string>Monitor your daily exercise and 
+activities to ensure you stay active 
+and fit. This feature allows you to 
+track the duration, type, and intensity 
+of your workouts, helping you maintain 
+a consistent and effective fitness routine.</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_36">
+              <property name="styleSheet">
+               <string notr="true">image: url(:/resource/dumbbell.png);</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QLabel" name="label_41">
+              <property name="font">
+               <font>
+                <family>Arial</family>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(38, 50, 56);</string>
+              </property>
+              <property name="text">
+               <string>Easily find out your Body Mass Index (BMI) 
+and Basal Metabolic Rate (BMR). 
+BMI helps you understand your 
+body's weight category, while 
+BMR gives you an estimate of 
+the number of calories you 
+need to maintain your current weight. </string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_nutritionTracker">
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="1" column="0">
+         <widget class="QWidget" name="widget_2" native="true">
+          <property name="styleSheet">
+           <string notr="true">/*background-color: rgb(255, 255, 255);*/
+background-color: rgb(251, 224, 224);</string>
+          </property>
+          <widget class="QLabel" name="label_6">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>210</y>
+             <width>161</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Arial Black</family>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(38, 50, 56);</string>
+           </property>
+           <property name="text">
+            <string>TOTAL CALORIES</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_4">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>10</y>
+             <width>91</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Arial Black</family>
+             <pointsize>11</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(38, 50, 56);</string>
+           </property>
+           <property name="text">
+            <string>FOOD LIST</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="totalCaloriesLabel">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>230</y>
+             <width>341</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Arial Black</family>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;
+border: 1px solid rgb(218, 218, 218);
+</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QWidget" name="layoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>30</y>
+             <width>341</width>
+             <height>171</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_8">
+            <item>
+             <widget class="QScrollArea" name="scrollArea">
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>165</width>
+                 <height>167</height>
+                </rect>
+               </property>
+               <widget class="QListWidget" name="foodListWidget">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>171</width>
+                  <height>171</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Box</enum>
+                </property>
+                <property name="editTriggers">
+                 <set>QAbstractItemView::NoEditTriggers</set>
+                </property>
+               </widget>
+              </widget>
+             </widget>
+            </item>
+            <item>
+             <widget class="QScrollArea" name="scrollArea_2">
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents_2">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>164</width>
+                 <height>167</height>
+                </rect>
+               </property>
+               <widget class="QListWidget" name="servingListWidget">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>171</width>
+                  <height>171</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Box</enum>
+                </property>
+                <property name="editTriggers">
+                 <set>QAbstractItemView::NoEditTriggers</set>
+                </property>
+               </widget>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QWidget" name="widget" native="true">
+          <property name="styleSheet">
+           <string notr="true">/*background-color: rgb(255, 255, 255);*/
+background-color: rgb(253, 243, 221);
+</string>
+          </property>
+          <widget class="QLabel" name="label">
+           <property name="geometry">
+            <rect>
+             <x>19</x>
+             <y>9</y>
+             <width>331</width>
+             <height>17</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Arial Black</family>
+             <pointsize>11</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(38, 50, 56);</string>
+           </property>
+           <property name="text">
+            <string>CHOOSE A CATEGORY</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QWidget" name="layoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>250</x>
+             <y>130</y>
+             <width>98</width>
+             <height>116</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_9">
+            <item>
+             <widget class="QPushButton" name="addButton">
+              <property name="font">
+               <font>
+                <family>Arial Black</family>
+                <pointsize>9</pointsize>
+                <italic>false</italic>
+                <fontweight>Black</fontweight>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton#addButton {
+float: right;
+border: 1px solid rgb(218, 218, 218);
+font: 900 9pt &quot;Arial Black&quot;;
+margin-right: 3%;
+margin-top: 5px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+padding: 5px 9px;
+font-size: 1.2em;
+background-color: rgb(246, 246, 246);
+text-shadow: #454545 0 0 2px;
+color: rgb(38, 50, 56);
+}
+QPushButton#addButton:pressed {
+background-color: rgb(218, 218, 218);
+border-style: inset;
+}</string>
+              </property>
+              <property name="text">
+               <string>ADD</string>
+              </property>
+              <property name="icon">
+               <iconset resource="things.qrc">
+                <normaloff>:/resource/plus-24844_1280.png</normaloff>:/resource/plus-24844_1280.png</iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="clearOneElementButton">
+              <property name="font">
+               <font>
+                <family>Arial Black</family>
+                <pointsize>9</pointsize>
+                <italic>false</italic>
+                <fontweight>Black</fontweight>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton#clearOneElementButton {
+float: right;
+border: 1px solid rgb(218, 218, 218);
+font: 900 9pt &quot;Arial Black&quot;;
+margin-right: 3%;
+margin-top: 5px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+padding: 5px 9px;
+font-size: 1.2em;
+background-color: rgb(246, 246, 246);
+text-shadow: #454545 0 0 2px;
+color: rgb(38, 50, 56);
+}
+QPushButton#clearOneElementButton:pressed {
+background-color: rgb(218, 218, 218);
+border-style: inset;
+}</string>
+              </property>
+              <property name="text">
+               <string>CLEAR</string>
+              </property>
+              <property name="icon">
+               <iconset resource="things.qrc">
+                <normaloff>:/resource/PngItem_5206121.png</normaloff>:/resource/PngItem_5206121.png</iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="clearButton">
+              <property name="font">
+               <font>
+                <family>Arial Black</family>
+                <pointsize>9</pointsize>
+                <italic>false</italic>
+                <fontweight>Black</fontweight>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton#clearButton {
+float: right;
+border: 1px solid rgb(218, 218, 218);
+font: 900 9pt &quot;Arial Black&quot;;
+margin-right: 3%;
+margin-top: 5px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+padding: 5px 9px;
+font-size: 1.2em;
+background-color: rgb(246, 246, 246);
+text-shadow: #454545 0 0 2px;
+color: rgb(38, 50, 56);
+}
+QPushButton#clearButton:pressed {
+background-color: rgb(218, 218, 218);
+border-style: inset;
+}</string>
+              </property>
+              <property name="text">
+               <string>CLEAR ALL</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="layoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>30</y>
+             <width>321</width>
+             <height>96</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_11">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_6">
+              <item>
+               <widget class="QPushButton" name="meatButton">
+                <property name="font">
+                 <font>
+                  <family>Arial Black</family>
+                  <pointsize>9</pointsize>
+                  <italic>false</italic>
+                  <fontweight>Black</fontweight>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton#meatButton {
+float: right;
+border: 1px solid rgb(218, 218, 218);
+font: 900 9pt &quot;Arial Black&quot;;
+margin-right: 3%;
+margin-top: 5px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+padding: 5px 9px;
+font-size: 1.2em;
+background-color: rgb(246, 246, 246);
+text-shadow: #454545 0 0 2px;
+color: rgb(38, 50, 56);
+}
+QPushButton#meatButton:pressed {
+background-color: rgb(218, 218, 218);
+border-style: inset;
+}
+
+</string>
+                </property>
+                <property name="text">
+                 <string>MEAT</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="things.qrc">
+                  <normaloff>:/resource/meat.png</normaloff>:/resource/meat.png</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>30</width>
+                  <height>30</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="dairyButton">
+                <property name="font">
+                 <font>
+                  <family>Arial Black</family>
+                  <pointsize>9</pointsize>
+                  <italic>false</italic>
+                  <fontweight>Black</fontweight>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton#dairyButton {
+float: right;
+border: 1px solid rgb(218, 218, 218);
+font: 900 9pt &quot;Arial Black&quot;;
+margin-right: 3%;
+margin-top: 5px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+padding: 5px 9px;
+font-size: 1.2em;
+background-color: rgb(246, 246, 246);
+text-shadow: #454545 0 0 2px;
+color: rgb(38, 50, 56);
+}
+QPushButton#dairyButton:pressed {
+background-color: rgb(218, 218, 218);
+border-style: inset;
+}</string>
+                </property>
+                <property name="text">
+                 <string>DAIRY</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="things.qrc">
+                  <normaloff>:/resource/milk-carton.png</normaloff>:/resource/milk-carton.png</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>30</width>
+                  <height>30</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="carbsButton">
+                <property name="font">
+                 <font>
+                  <family>Arial Black</family>
+                  <pointsize>9</pointsize>
+                  <italic>false</italic>
+                  <fontweight>Black</fontweight>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton#carbsButton {
+float: right;
+border: 1px solid rgb(218, 218, 218);
+font: 900 9pt &quot;Arial Black&quot;;
+margin-right: 3%;
+margin-top: 5px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+padding: 5px 9px;
+font-size: 1.2em;
+background-color: rgb(246, 246, 246);
+text-shadow: #454545 0 0 2px;
+color: rgb(38, 50, 56);
+}
+QPushButton#carbsButton:pressed {
+background-color: rgb(218, 218, 218);
+border-style: inset;
+}</string>
+                </property>
+                <property name="text">
+                 <string>CARBS</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="things.qrc">
+                  <normaloff>:/resource/carbohydrates.png</normaloff>:/resource/carbohydrates.png</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>25</width>
+                  <height>25</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_7">
+              <item>
+               <widget class="QPushButton" name="vegAndFruitButton">
+                <property name="font">
+                 <font>
+                  <family>Arial Black</family>
+                  <pointsize>9</pointsize>
+                  <italic>false</italic>
+                  <fontweight>Black</fontweight>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton#vegAndFruitButton {
+float: right;
+border: 1px solid rgb(218, 218, 218);
+font: 900 9pt &quot;Arial Black&quot;;
+margin-right: 3%;
+margin-top: 5px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+padding: 5px 9px;
+font-size: 1.2em;
+background-color: rgb(246, 246, 246);
+text-shadow: #454545 0 0 2px;
+color: rgb(38, 50, 56);
+}
+QPushButton#vegAndFruitButton:pressed {
+background-color: rgb(218, 218, 218);
+border-style: inset;
+}</string>
+                </property>
+                <property name="text">
+                 <string>VEG/FRUIT</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="things.qrc">
+                  <normaloff>:/resource/diet.png</normaloff>:/resource/diet.png</iconset>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="otherButton">
+                <property name="font">
+                 <font>
+                  <family>Arial Black</family>
+                  <pointsize>9</pointsize>
+                  <italic>false</italic>
+                  <fontweight>Black</fontweight>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton#otherButton {
+float: right;
+border: 1px solid rgb(218, 218, 218);
+font: 900 9pt &quot;Arial Black&quot;;
+margin-right: 3%;
+margin-top: 5px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+padding: 5px 9px;
+font-size: 1.2em;
+background-color: rgb(246, 246, 246);
+text-shadow: #454545 0 0 2px;
+color: rgb(38, 50, 56);
+}
+QPushButton#otherButton:pressed {
+background-color: rgb(218, 218, 218);
+border-style: inset;
+}</string>
+                </property>
+                <property name="text">
+                 <string>OTHER</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="things.qrc">
+                  <normaloff>:/resource/noodles.png</normaloff>:/resource/noodles.png</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="layoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>150</y>
+             <width>231</width>
+             <height>71</height>
+            </rect>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_11">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_2">
+              <property name="font">
+               <font>
+                <family>Arial Black</family>
+                <pointsize>13</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(38, 50, 56);</string>
+              </property>
+              <property name="text">
+               <string>FOOD</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1" colspan="2">
+             <widget class="QComboBox" name="foodComboBox">
+              <property name="font">
+               <font>
+                <family>Arial</family>
+               </font>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::WheelFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);
+border: 1px solid rgb(218, 218, 218);</string>
+              </property>
+              <property name="insertPolicy">
+               <enum>QComboBox::InsertAtBottom</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QLabel" name="label_3">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial Black</family>
+                <pointsize>13</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(38, 50, 56);</string>
+              </property>
+              <property name="text">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;SERVING&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="QComboBox" name="servingComboBox">
+              <property name="font">
+               <font>
+                <family>Arial</family>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);
+border: 1px solid rgb(218, 218, 218);</string>
+              </property>
+              <property name="currentText">
+               <string>1</string>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>1</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>3</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>4</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>5</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>6</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>7</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>8</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>9</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QWidget" name="widget_3" native="true">
+          <property name="styleSheet">
+           <string notr="true">/*background-color: rgb(255, 255, 255);*/
+background-color: rgb(226, 238, 245);
+
+</string>
+          </property>
+          <widget class="QTableWidget" name="foodCharacteristicsTableWidget">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>160</y>
+             <width>341</width>
+             <height>101</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Arial</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Box</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Sunken</enum>
+           </property>
+           <property name="verticalScrollBarPolicy">
+            <enum>Qt::ScrollBarAsNeeded</enum>
+           </property>
+           <property name="editTriggers">
+            <set>QAbstractItemView::NoEditTriggers</set>
+           </property>
+           <property name="selectionMode">
+            <enum>QAbstractItemView::ExtendedSelection</enum>
+           </property>
+           <property name="verticalScrollMode">
+            <enum>QAbstractItemView::ScrollPerPixel</enum>
+           </property>
+           <property name="gridStyle">
+            <enum>Qt::SolidLine</enum>
+           </property>
+           <attribute name="horizontalHeaderDefaultSectionSize">
+            <number>203</number>
+           </attribute>
+           <row>
+            <property name="text">
+             <string>Information</string>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial Black</family>
+              <bold>true</bold>
+             </font>
+            </property>
+           </row>
+           <column>
+            <property name="text">
+             <string>Name</string>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial Black</family>
+              <bold>true</bold>
+             </font>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Carbohydrate</string>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial Black</family>
+              <bold>true</bold>
+             </font>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Calories</string>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial Black</family>
+              <bold>true</bold>
+             </font>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Protein</string>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial Black</family>
+              <bold>true</bold>
+             </font>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Sugar</string>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial Black</family>
+             </font>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Saturated Fat</string>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial Black</family>
+             </font>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Total Fat</string>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial Black</family>
+             </font>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Calcium (mg)</string>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial Black</family>
+             </font>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Sodium (mg)</string>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial Black</family>
+             </font>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Household Weight Description</string>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial Black</family>
+             </font>
+            </property>
+           </column>
+           <item row="0" column="0">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+             </font>
+            </property>
+           </item>
+           <item row="0" column="1">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+             </font>
+            </property>
+           </item>
+           <item row="0" column="3">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+             </font>
+            </property>
+           </item>
+           <item row="0" column="4">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+             </font>
+            </property>
+           </item>
+           <item row="0" column="5">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+             </font>
+            </property>
+           </item>
+           <item row="0" column="6">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+             </font>
+            </property>
+           </item>
+           <item row="0" column="7">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+             </font>
+            </property>
+           </item>
+           <item row="0" column="8">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+             </font>
+            </property>
+           </item>
+           <item row="0" column="9">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+             </font>
+            </property>
+           </item>
+          </widget>
+          <widget class="QLabel" name="label_5">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>10</y>
+             <width>361</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Arial Black</family>
+             <pointsize>16</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(38, 50, 56);</string>
+           </property>
+           <property name="text">
+            <string>PRODUCT INFORMATION</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_16">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>40</y>
+             <width>351</width>
+             <height>111</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image: url(:/resource/Carbohydrate__protein_and_fat_food_set-removebg-preview.png);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QWidget" name="widget_4" native="true">
+          <property name="styleSheet">
+           <string notr="true">/*background-color: rgb(255, 255, 255);*/
+background-color: rgb(231, 246, 206);</string>
+          </property>
+          <widget class="QScrollArea" name="scrollArea_3">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>50</y>
+             <width>341</width>
+             <height>211</height>
+            </rect>
+           </property>
+           <property name="widgetResizable">
+            <bool>true</bool>
+           </property>
+           <widget class="QWidget" name="scrollAreaWidgetContents_3">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>339</width>
+              <height>209</height>
+             </rect>
+            </property>
+            <widget class="QTableWidget" name="nutritionDBTableWidget">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>341</width>
+               <height>211</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Arial</family>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="editTriggers">
+              <set>QAbstractItemView::NoEditTriggers</set>
+             </property>
+             <property name="sortingEnabled">
+              <bool>true</bool>
+             </property>
+             <attribute name="horizontalHeaderDefaultSectionSize">
+              <number>100</number>
+             </attribute>
+             <column>
+              <property name="text">
+               <string>DATA</string>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial Black</family>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>FOOD LIST</string>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial Black</family>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>SERVINGS</string>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial Black</family>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>CALORIES</string>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial Black</family>
+               </font>
+              </property>
+             </column>
+            </widget>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="layoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>10</y>
+             <width>301</width>
+             <height>36</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <widget class="QPushButton" name="addToDBNutPushButton">
+              <property name="styleSheet">
+               <string notr="true">QPushButton#addToDBNutPushButton {
+float: right;
+border: 1px solid rgb(218, 218, 218);
+font: 900 9pt &quot;Arial Black&quot;;
+margin-right: 3%;
+margin-top: 5px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+padding: 5px 9px;
+font-size: 1.2em;
+background-color: rgb(246, 246, 246);
+text-shadow: #454545 0 0 2px;
+color: rgb(38, 50, 56);
+}
+QPushButton#addToDBNutPushButton:pressed {
+background-color: rgb(218, 218, 218);
+border-style: inset;
+}</string>
+              </property>
+              <property name="text">
+               <string>SAVE</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="viewDataNutPushButton">
+              <property name="styleSheet">
+               <string notr="true">QPushButton#viewDataNutPushButton {
+float: right;
+border: 1px solid rgb(218, 218, 218);
+font: 900 9pt &quot;Arial Black&quot;;
+margin-right: 3%;
+margin-top: 5px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+padding: 5px 9px;
+font-size: 1.2em;
+background-color: rgb(246, 246, 246);
+text-shadow: #454545 0 0 2px;
+color: rgb(38, 50, 56);
+}
+QPushButton#viewDataNutPushButton:pressed {
+background-color: rgb(218, 218, 218);
+border-style: inset;
+}</string>
+              </property>
+              <property name="text">
+               <string>VIEW</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="deleteDataNutpushButton">
+              <property name="styleSheet">
+               <string notr="true">QPushButton#deleteDataNutpushButton {
+float: right;
+border: 1px solid rgb(218, 218, 218);
+font: 900 9pt &quot;Arial Black&quot;;
+margin-right: 3%;
+margin-top: 5px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+padding: 5px 9px;
+font-size: 1.2em;
+background-color: rgb(246, 246, 246);
+text-shadow: #454545 0 0 2px;
+color: rgb(38, 50, 56);
+}
+QPushButton#deleteDataNutpushButton:pressed {
+background-color: rgb(218, 218, 218);
+border-style: inset;
+}</string>
+              </property>
+              <property name="text">
+               <string>DELETE</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QLabel" name="label_50">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>31</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;You can add food information to track your menu.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image: url(:/resource/question (1).png);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_sport">
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <widget class="QWidget" name="widget_8" native="true">
+          <layout class="QGridLayout" name="gridLayout_9">
+           <item row="0" column="1" rowspan="3">
+            <widget class="QWidget" name="widget_20" native="true">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(231, 246, 206);</string>
+             </property>
+             <widget class="QPushButton" name="viewProgressActivity">
+              <property name="geometry">
+               <rect>
+                <x>110</x>
+                <y>10</y>
+                <width>141</width>
+                <height>32</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton#viewProgressActivity {
+float: right;
+border: 1px solid rgb(218, 218, 218);
+font: 900 9pt &quot;Arial Black&quot;;
+margin-right: 3%;
+margin-top: 5px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+padding: 5px 9px;
+font-size: 1.2em;
+background-color: rgb(246, 246, 246);
+text-shadow: #454545 0 0 2px;
+color: rgb(38, 50, 56);
+}
+QPushButton#viewProgressActivity:pressed {
+background-color: rgb(218, 218, 218);
+border-style: inset;
+}</string>
+              </property>
+              <property name="text">
+               <string>ACTIVITY TREND</string>
+              </property>
+             </widget>
+             <widget class="QChartView" name="activityProgressGraphicsView">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>50</y>
+                <width>331</width>
+                <height>421</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;</string>
+              </property>
+             </widget>
+            </widget>
+           </item>
+           <item row="0" column="0" rowspan="2">
+            <widget class="QWidget" name="widget_7" native="true">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(253, 243, 221);</string>
+             </property>
+             <widget class="QComboBox" name="activityComboBox">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>140</y>
+                <width>331</width>
+                <height>22</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);
+border: 1px solid rgb(218, 218, 218);</string>
+              </property>
+              <property name="insertPolicy">
+               <enum>QComboBox::InsertAtBottom</enum>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_11">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>0</y>
+                <width>341</width>
+                <height>21</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial Black</family>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(38, 50, 56);</string>
+              </property>
+              <property name="text">
+               <string>CHOOSE A CATEGORY</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_12">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>120</y>
+                <width>341</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial Black</family>
+                <pointsize>9</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(38, 50, 56);</string>
+              </property>
+              <property name="text">
+               <string>Activity</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+             <widget class="QGroupBox" name="groupBox">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>170</y>
+                <width>331</width>
+                <height>71</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(253, 227, 170);
+border-radius: 10px;</string>
+              </property>
+              <property name="title">
+               <string/>
+              </property>
+              <widget class="QWidget" name="layoutWidget">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>10</y>
+                 <width>321</width>
+                 <height>52</height>
+                </rect>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_4">
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label_9">
+                  <property name="font">
+                   <font>
+                    <family>Arial Black</family>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(38, 50, 56);</string>
+                  </property>
+                  <property name="text">
+                   <string>DURATION</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="3">
+                 <widget class="QLineEdit" name="minDLineEdit">
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(255, 255, 255);
+border: 1px solid rgb(218, 218, 218);
+</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QLabel" name="label_10">
+                  <property name="font">
+                   <font>
+                    <family>Arial Black</family>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(38, 50, 56);</string>
+                  </property>
+                  <property name="text">
+                   <string>BODY WEIGHT</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="2">
+                 <widget class="QLabel" name="label_13">
+                  <property name="font">
+                   <font>
+                    <family>Arial Black</family>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>h</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QLineEdit" name="hourDLineEdit">
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(255, 255, 255);
+border: 1px solid rgb(218, 218, 218);
+</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="2">
+                 <widget class="QLabel" name="label_15">
+                  <property name="styleSheet">
+                   <string notr="true">font: 900 9pt &quot;Arial Black&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>kg</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="1">
+                 <widget class="QLineEdit" name="weightLineEdit">
+                  <property name="toolTip">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enter your weight&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(255, 255, 255);
+border: 1px solid rgb(218, 218, 218);
+</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="4">
+                 <widget class="QLabel" name="label_14">
+                  <property name="styleSheet">
+                   <string notr="true">font: 900 9pt &quot;Arial Black&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>min</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+             <widget class="QPushButton" name="lsPushButton">
+              <property name="geometry">
+               <rect>
+                <x>90</x>
+                <y>70</y>
+                <width>161</width>
+                <height>51</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial Black</family>
+                <pointsize>9</pointsize>
+                <italic>false</italic>
+                <fontweight>Black</fontweight>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton#lsPushButton {
+float: right;
+border: 1px solid rgb(218, 218, 218);
+font: 900 9pt &quot;Arial Black&quot;;
+margin-right: 3%;
+margin-top: 5px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+padding: 5px 9px;
+font-size: 1.2em;
+background-color: rgb(246, 246, 246);
+text-shadow: #454545 0 0 2px;
+color: rgb(38, 50, 56);
+}
+QPushButton#lsPushButton:pressed {
+background-color: rgb(218, 218, 218);
+border-style: inset;
+}</string>
+              </property>
+              <property name="text">
+               <string>Leisure time and
+ sports</string>
+              </property>
+              <property name="icon">
+               <iconset resource="things.qrc">
+                <normaloff>:/resource/workout (3).png</normaloff>:/resource/workout (3).png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="hoPushButton">
+              <property name="geometry">
+               <rect>
+                <x>179</x>
+                <y>20</y>
+                <width>161</width>
+                <height>51</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial Black</family>
+                <pointsize>9</pointsize>
+                <italic>false</italic>
+                <fontweight>Black</fontweight>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton#hoPushButton {
+float: right;
+border: 1px solid rgb(218, 218, 218);
+font: 900 9pt &quot;Arial Black&quot;;
+margin-right: 3%;
+margin-top: 5px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+padding: 5px 9px;
+font-size: 1.2em;
+background-color: rgb(246, 246, 246);
+text-shadow: #454545 0 0 2px;
+color: rgb(38, 50, 56);
+}
+QPushButton#hoPushButton:pressed {
+background-color: rgb(218, 218, 218);
+border-style: inset;
+}</string>
+              </property>
+              <property name="text">
+               <string>Household and
+ occupation</string>
+              </property>
+              <property name="icon">
+               <iconset resource="things.qrc">
+                <normaloff>:/resource/workout.png</normaloff>:/resource/workout.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="wjrPushButton">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>20</y>
+                <width>161</width>
+                <height>51</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial Black</family>
+                <pointsize>9</pointsize>
+                <italic>false</italic>
+                <fontweight>Black</fontweight>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton#wjrPushButton {
+float: right;
+border: 1px solid rgb(218, 218, 218);
+font: 900 9pt &quot;Arial Black&quot;;
+margin-right: 3%;
+margin-top: 5px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+padding: 5px 9px;
+font-size: 1.2em;
+background-color: rgb(246, 246, 246);
+text-shadow: #454545 0 0 2px;
+color: rgb(38, 50, 56);
+}
+QPushButton#wjrPushButton:pressed {
+background-color: rgb(218, 218, 218);
+border-style: inset;
+}</string>
+              </property>
+              <property name="text">
+               <string>Walking, jogging
+ and running</string>
+              </property>
+              <property name="icon">
+               <iconset resource="things.qrc">
+                <normaloff>:/resource/workout (2).png</normaloff>:/resource/workout (2).png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="calculatePushButton">
+              <property name="geometry">
+               <rect>
+                <x>130</x>
+                <y>240</y>
+                <width>101</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial Black</family>
+                <pointsize>9</pointsize>
+                <italic>false</italic>
+                <fontweight>Black</fontweight>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton#calculatePushButton {
+float: right;
+border: 1px solid rgb(218, 218, 218);
+font: 900 9pt &quot;Arial Black&quot;;
+margin-right: 3%;
+margin-top: 5px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+padding: 5px 9px;
+font-size: 1.2em;
+background-color: rgb(246, 246, 246);
+text-shadow: #454545 0 0 2px;
+color: rgb(38, 50, 56);
+}
+QPushButton#calculatePushButton:pressed {
+background-color: rgb(218, 218, 218);
+border-style: inset;
+}</string>
+              </property>
+              <property name="text">
+               <string>CALCULATE</string>
+              </property>
+             </widget>
+             <widget class="QGroupBox" name="groupBox_2">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>280</y>
+                <width>331</width>
+                <height>61</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">font: 900 9pt &quot;Arial Black&quot;;
+color: rgb(38, 50, 56);</string>
+              </property>
+              <property name="title">
+               <string>RESULT</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_12">
+               <item row="0" column="0">
+                <layout class="QHBoxLayout" name="horizontalLayout_4">
+                 <item>
+                  <widget class="QLabel" name="totalCalorieActivityLabel">
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;
+border: 1px solid rgb(218, 218, 218);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_37">
+                   <property name="font">
+                    <font>
+                     <family>Arial Black</family>
+                     <pointsize>9</pointsize>
+                     <italic>false</italic>
+                     <fontweight>Black</fontweight>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Calories&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QWidget" name="widget_9" native="true">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(251, 224, 224);</string>
+             </property>
+             <widget class="QTableWidget" name="tableWidget">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>50</y>
+                <width>331</width>
+                <height>121</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QTableWidget" name="activityDBTableWidget">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>50</y>
+                <width>331</width>
+                <height>121</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="editTriggers">
+               <set>QAbstractItemView::NoEditTriggers</set>
+              </property>
+              <property name="sortingEnabled">
+               <bool>true</bool>
+              </property>
+              <column>
+               <property name="text">
+                <string>DATA</string>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial Black</family>
+                </font>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>ACTIVITY</string>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial Black</family>
+                </font>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>DURATION</string>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial Black</family>
+                </font>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>CALORIES</string>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial Black</family>
+                </font>
+               </property>
+              </column>
+             </widget>
+             <widget class="QWidget" name="layoutWidget">
+              <property name="geometry">
+               <rect>
+                <x>60</x>
+                <y>10</y>
+                <width>281</width>
+                <height>36</height>
+               </rect>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_2">
+               <item>
+                <widget class="QPushButton" name="addToDBActPushButton">
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton#addToDBActPushButton {
+float: right;
+border: 1px solid rgb(218, 218, 218);
+font: 900 9pt &quot;Arial Black&quot;;
+margin-right: 3%;
+margin-top: 5px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+padding: 5px 9px;
+font-size: 1.2em;
+background-color: rgb(246, 246, 246);
+text-shadow: #454545 0 0 2px;
+color: rgb(38, 50, 56);
+}
+QPushButton#addToDBActPushButton:pressed {
+background-color: rgb(218, 218, 218);
+border-style: inset;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>SAVE</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="viewDataActPushButton">
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton#viewDataActPushButton {
+float: right;
+border: 1px solid rgb(218, 218, 218);
+font: 900 9pt &quot;Arial Black&quot;;
+margin-right: 3%;
+margin-top: 5px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+padding: 5px 9px;
+font-size: 1.2em;
+background-color: rgb(246, 246, 246);
+text-shadow: #454545 0 0 2px;
+color: rgb(38, 50, 56);
+}
+QPushButton#viewDataActPushButton:pressed {
+background-color: rgb(218, 218, 218);
+border-style: inset;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>VIEW</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="deleteDataActPushButton">
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton#deleteDataActPushButton {
+float: right;
+border: 1px solid rgb(218, 218, 218);
+font: 900 9pt &quot;Arial Black&quot;;
+margin-right: 3%;
+margin-top: 5px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+padding: 5px 9px;
+font-size: 1.2em;
+background-color: rgb(246, 246, 246);
+text-shadow: #454545 0 0 2px;
+color: rgb(38, 50, 56);
+}
+QPushButton#deleteDataActPushButton:pressed {
+background-color: rgb(218, 218, 218);
+border-style: inset;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>DELETE</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QLabel" name="label_51">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>10</y>
+                <width>41</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <property name="toolTip">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;You can add activity information to track your active activities.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">image: url(:/resource/question (1).png);</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_diary">
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="1" column="0">
+         <widget class="QFrame" name="frame">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(231, 246, 206);</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QStackedWidget" name="classificationBMIStackedWidget">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>50</y>
+             <width>341</width>
+             <height>191</height>
+            </rect>
+           </property>
+           <property name="currentIndex">
+            <number>1</number>
+           </property>
+           <widget class="QWidget" name="page">
+            <layout class="QVBoxLayout" name="verticalLayout"/>
+           </widget>
+           <widget class="QWidget" name="page_severeThiness">
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <item>
+              <widget class="QWidget" name="widget_12" native="true">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(188, 32, 32);
+border-radius: 15px;</string>
+               </property>
+               <widget class="QLabel" name="label_23">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>10</y>
+                  <width>301</width>
+                  <height>81</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial Black</family>
+                  <pointsize>15</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Severe Thinness&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_45">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>90</y>
+                  <width>301</width>
+                  <height>71</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">image: url(:/resource/love.png);</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="page_moderateThinness">
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <item>
+              <widget class="QWidget" name="widget_13" native="true">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(211, 136, 136);
+border-radius: 15px;</string>
+               </property>
+               <widget class="QLabel" name="label_26">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>10</y>
+                  <width>301</width>
+                  <height>81</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial Black</family>
+                  <pointsize>15</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Moderate Thinness&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_46">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>90</y>
+                  <width>301</width>
+                  <height>71</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">image: url(:/resource/sad (1).png);</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="page_mildThinness">
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <item>
+              <widget class="QWidget" name="widget_14" native="true">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 228, 0);
+border-radius: 15px;</string>
+               </property>
+               <widget class="QLabel" name="label_27">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>10</y>
+                  <width>301</width>
+                  <height>81</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial Black</family>
+                  <pointsize>15</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Mild Thinness&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_47">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>90</y>
+                  <width>301</width>
+                  <height>71</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">image: url(:/resource/upset.png);</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="page_normal">
+            <layout class="QVBoxLayout" name="verticalLayout_5">
+             <item>
+              <widget class="QWidget" name="widget_15" native="true">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(0, 129, 55);
+border-radius: 15px;</string>
+               </property>
+               <widget class="QLabel" name="label_28">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>10</y>
+                  <width>301</width>
+                  <height>71</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial Black</family>
+                  <pointsize>15</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Normal&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_42">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>90</y>
+                  <width>301</width>
+                  <height>71</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">image: url(:/resource/happy (2).png);</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="page_overweight">
+            <widget class="QWidget" name="widget_16" native="true">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>321</width>
+               <height>171</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 228, 0);
+border-radius: 15px;</string>
+             </property>
+             <widget class="QLabel" name="label_29">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>10</y>
+                <width>301</width>
+                <height>81</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial Black</family>
+                <pointsize>15</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Overweight&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_43">
+              <property name="geometry">
+               <rect>
+                <x>8</x>
+                <y>90</y>
+                <width>301</width>
+                <height>71</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">image: url(:/resource/thinking.png);</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="page_obeseClass1">
+            <layout class="QVBoxLayout" name="verticalLayout_6">
+             <item>
+              <widget class="QWidget" name="widget_17" native="true">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(211, 136, 136);
+border-radius: 15px;</string>
+               </property>
+               <widget class="QLabel" name="label_30">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>10</y>
+                  <width>301</width>
+                  <height>81</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial Black</family>
+                  <pointsize>15</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Obese Class I&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_48">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>90</y>
+                  <width>301</width>
+                  <height>71</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">image: url(:/resource/upset.png);</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="page_obeseClass2">
+            <layout class="QVBoxLayout" name="verticalLayout_7">
+             <item>
+              <widget class="QWidget" name="widget_18" native="true">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(188, 32, 32);
+border-radius: 15px;</string>
+               </property>
+               <widget class="QLabel" name="label_31">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>10</y>
+                  <width>301</width>
+                  <height>81</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial Black</family>
+                  <pointsize>15</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Obese Class II&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_49">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>90</y>
+                  <width>301</width>
+                  <height>71</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">image: url(:/resource/sad (1).png);</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="page_obeseClass3">
+            <layout class="QVBoxLayout" name="verticalLayout_8">
+             <item>
+              <widget class="QWidget" name="widget_19" native="true">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(138, 1, 1);
+border-radius: 15px;</string>
+               </property>
+               <widget class="QLabel" name="label_32">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>10</y>
+                  <width>301</width>
+                  <height>81</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial Black</family>
+                  <pointsize>15</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Obese Class III&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_44">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>90</y>
+                  <width>301</width>
+                  <height>71</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">image: url(:/resource/love.png);</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="layoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>241</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_6">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_17">
+              <property name="font">
+               <font>
+                <family>Arial Black</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(38, 50, 56);</string>
+              </property>
+              <property name="text">
+               <string>BMI = </string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLabel" name="totalBMILabel">
+              <property name="font">
+               <font>
+                <family>Arial Black</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;
+border: 1px solid rgb(218, 218, 218);</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QLabel" name="label_33">
+              <property name="font">
+               <font>
+                <family>Arial Black</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(38, 50, 56);</string>
+              </property>
+              <property name="text">
+               <string>kg/m2 </string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QLabel" name="label_52">
+           <property name="geometry">
+            <rect>
+             <x>270</x>
+             <y>10</y>
+             <width>51</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; border-collapse:collapse;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot; bgcolor=&quot;#ffffff&quot;&gt;&lt;tr&gt;&lt;td bgcolor=&quot;#336699&quot; style=&quot; padding-left:3; padding-right:3; padding-top:5; padding-bottom:5; border-top:1px; border-right:1px; border-bottom:1px; border-left:1px; border-top-color:#114477; border-right-color:#114477; border-bottom-color:#336699; border-left-color:#114477; border-top-style:solid; border-right-style:solid; border-bottom-style:solid; border-left-style:solid;&quot;&gt;&lt;p&gt;&lt;span style=&quot; font-family:'arial','helvetica','sans-serif'; font-size:16px; font-weight:700; color:#ffffff; background-color:#336699;&quot;&gt;Classification&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td bgcolor=&quot;#336699&quot; style=&quot; padding-left:3; padding-right:3; padding-top:5; padding-bottom:5; border-top:1px; border-right:1px; border-bottom:1px; border-left:1px; border-top-color:#114477; border-right-color:#114477; border-bottom-color:#336699; border-left-color:#114477; border-top-style:solid; border-right-style:solid; border-bottom-style:solid; border-left-style:solid;&quot;&gt;&lt;p&gt;&lt;span style=&quot; font-family:'arial','helvetica','sans-serif'; font-size:16px; font-weight:700; color:#ffffff; background-color:#336699;&quot;&gt;BMI range - kg/m&lt;/span&gt;&lt;span style=&quot; font-family:'arial','helvetica','sans-serif'; font-size:16px; font-weight:700; color:#ffffff; vertical-align:super;&quot;&gt;2&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td bgcolor=&quot;#ffffff&quot; style=&quot; padding-left:3; padding-right:3; padding-top:3; padding-bottom:3; border-top:1px; border-right:1px; border-bottom:1px; border-left:1px; border-top-color:#cccccc; border-right-color:#cccccc; border-bottom-color:#cccccc; border-left-color:#cccccc; border-top-style:solid; border-right-style:solid; border-bottom-style:solid; border-left-style:solid;&quot;&gt;&lt;p&gt;&lt;span style=&quot; font-family:'arial','helvetica','sans-serif'; font-size:16px; color:#000000; background-color:#ffffff;&quot;&gt;Severe Thinness&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td bgcolor=&quot;#ffffff&quot; style=&quot; padding-left:3; padding-right:3; padding-top:3; padding-bottom:3; border-top:1px; border-right:1px; border-bottom:1px; border-left:1px; border-top-color:#cccccc; border-right-color:#cccccc; border-bottom-color:#cccccc; border-left-color:#cccccc; border-top-style:solid; border-right-style:solid; border-bottom-style:solid; border-left-style:solid;&quot;&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-family:'arial','helvetica','sans-serif'; font-size:16px; color:#000000; background-color:#ffffff;&quot;&gt;&amp;lt; 16&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td bgcolor=&quot;#eeeeee&quot; style=&quot; padding-left:3; padding-right:3; padding-top:3; padding-bottom:3; border-top:1px; border-right:1px; border-bottom:1px; border-left:1px; border-top-color:#cccccc; border-right-color:#cccccc; border-bottom-color:#cccccc; border-left-color:#cccccc; border-top-style:solid; border-right-style:solid; border-bottom-style:solid; border-left-style:solid;&quot;&gt;&lt;p&gt;&lt;span style=&quot; font-family:'arial','helvetica','sans-serif'; font-size:16px; color:#000000; background-color:#eeeeee;&quot;&gt;Moderate Thinness&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td bgcolor=&quot;#eeeeee&quot; style=&quot; padding-left:3; padding-right:3; padding-top:3; padding-bottom:3; border-top:1px; border-right:1px; border-bottom:1px; border-left:1px; border-top-color:#cccccc; border-right-color:#cccccc; border-bottom-color:#cccccc; border-left-color:#cccccc; border-top-style:solid; border-right-style:solid; border-bottom-style:solid; border-left-style:solid;&quot;&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-family:'arial','helvetica','sans-serif'; font-size:16px; color:#000000; background-color:#eeeeee;&quot;&gt;16 - 17&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td bgcolor=&quot;#ffffff&quot; style=&quot; padding-left:3; padding-right:3; padding-top:3; padding-bottom:3; border-top:1px; border-right:1px; border-bottom:1px; border-left:1px; border-top-color:#cccccc; border-right-color:#cccccc; border-bottom-color:#cccccc; border-left-color:#cccccc; border-top-style:solid; border-right-style:solid; border-bottom-style:solid; border-left-style:solid;&quot;&gt;&lt;p&gt;&lt;span style=&quot; font-family:'arial','helvetica','sans-serif'; font-size:16px; color:#000000; background-color:#ffffff;&quot;&gt;Mild Thinness&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td bgcolor=&quot;#ffffff&quot; style=&quot; padding-left:3; padding-right:3; padding-top:3; padding-bottom:3; border-top:1px; border-right:1px; border-bottom:1px; border-left:1px; border-top-color:#cccccc; border-right-color:#cccccc; border-bottom-color:#cccccc; border-left-color:#cccccc; border-top-style:solid; border-right-style:solid; border-bottom-style:solid; border-left-style:solid;&quot;&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-family:'arial','helvetica','sans-serif'; font-size:16px; color:#000000; background-color:#ffffff;&quot;&gt;17 - 18.5&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td bgcolor=&quot;#eeeeee&quot; style=&quot; padding-left:3; padding-right:3; padding-top:3; padding-bottom:3; border-top:1px; border-right:1px; border-bottom:1px; border-left:1px; border-top-color:#cccccc; border-right-color:#cccccc; border-bottom-color:#cccccc; border-left-color:#cccccc; border-top-style:solid; border-right-style:solid; border-bottom-style:solid; border-left-style:solid;&quot;&gt;&lt;p&gt;&lt;span style=&quot; font-family:'arial','helvetica','sans-serif'; font-size:16px; color:#000000; background-color:#eeeeee;&quot;&gt;Normal&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td bgcolor=&quot;#eeeeee&quot; style=&quot; padding-left:3; padding-right:3; padding-top:3; padding-bottom:3; border-top:1px; border-right:1px; border-bottom:1px; border-left:1px; border-top-color:#cccccc; border-right-color:#cccccc; border-bottom-color:#cccccc; border-left-color:#cccccc; border-top-style:solid; border-right-style:solid; border-bottom-style:solid; border-left-style:solid;&quot;&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-family:'arial','helvetica','sans-serif'; font-size:16px; color:#000000; background-color:#eeeeee;&quot;&gt;18.5 - 25&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td bgcolor=&quot;#ffffff&quot; style=&quot; padding-left:3; padding-right:3; padding-top:3; padding-bottom:3; border-top:1px; border-right:1px; border-bottom:1px; border-left:1px; border-top-color:#cccccc; border-right-color:#cccccc; border-bottom-color:#cccccc; border-left-color:#cccccc; border-top-style:solid; border-right-style:solid; border-bottom-style:solid; border-left-style:solid;&quot;&gt;&lt;p&gt;&lt;span style=&quot; font-family:'arial','helvetica','sans-serif'; font-size:16px; color:#000000; background-color:#ffffff;&quot;&gt;Overweight&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td bgcolor=&quot;#ffffff&quot; style=&quot; padding-left:3; padding-right:3; padding-top:3; padding-bottom:3; border-top:1px; border-right:1px; border-bottom:1px; border-left:1px; border-top-color:#cccccc; border-right-color:#cccccc; border-bottom-color:#cccccc; border-left-color:#cccccc; border-top-style:solid; border-right-style:solid; border-bottom-style:solid; border-left-style:solid;&quot;&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-family:'arial','helvetica','sans-serif'; font-size:16px; color:#000000; background-color:#ffffff;&quot;&gt;25 - 30&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td bgcolor=&quot;#eeeeee&quot; style=&quot; padding-left:3; padding-right:3; padding-top:3; padding-bottom:3; border-top:1px; border-right:1px; border-bottom:1px; border-left:1px; border-top-color:#cccccc; border-right-color:#cccccc; border-bottom-color:#cccccc; border-left-color:#cccccc; border-top-style:solid; border-right-style:solid; border-bottom-style:solid; border-left-style:solid;&quot;&gt;&lt;p&gt;&lt;span style=&quot; font-family:'arial','helvetica','sans-serif'; font-size:16px; color:#000000; background-color:#eeeeee;&quot;&gt;Obese Class I&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td bgcolor=&quot;#eeeeee&quot; style=&quot; padding-left:3; padding-right:3; padding-top:3; padding-bottom:3; border-top:1px; border-right:1px; border-bottom:1px; border-left:1px; border-top-color:#cccccc; border-right-color:#cccccc; border-bottom-color:#cccccc; border-left-color:#cccccc; border-top-style:solid; border-right-style:solid; border-bottom-style:solid; border-left-style:solid;&quot;&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-family:'arial','helvetica','sans-serif'; font-size:16px; color:#000000; background-color:#eeeeee;&quot;&gt;30 - 35&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td bgcolor=&quot;#ffffff&quot; style=&quot; padding-left:3; padding-right:3; padding-top:3; padding-bottom:3; border-top:1px; border-right:1px; border-bottom:1px; border-left:1px; border-top-color:#cccccc; border-right-color:#cccccc; border-bottom-color:#cccccc; border-left-color:#cccccc; border-top-style:solid; border-right-style:solid; border-bottom-style:solid; border-left-style:solid;&quot;&gt;&lt;p&gt;&lt;span style=&quot; font-family:'arial','helvetica','sans-serif'; font-size:16px; color:#000000; background-color:#ffffff;&quot;&gt;Obese Class II&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td bgcolor=&quot;#ffffff&quot; style=&quot; padding-left:3; padding-right:3; padding-top:3; padding-bottom:3; border-top:1px; border-right:1px; border-bottom:1px; border-left:1px; border-top-color:#cccccc; border-right-color:#cccccc; border-bottom-color:#cccccc; border-left-color:#cccccc; border-top-style:solid; border-right-style:solid; border-bottom-style:solid; border-left-style:solid;&quot;&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-family:'arial','helvetica','sans-serif'; font-size:16px; color:#000000; background-color:#ffffff;&quot;&gt;35 - 40&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td bgcolor=&quot;#eeeeee&quot; style=&quot; padding-left:3; padding-right:3; padding-top:3; padding-bottom:3; border-top:1px; border-right:1px; border-bottom:1px; border-left:1px; border-top-color:#cccccc; border-right-color:#cccccc; border-bottom-color:#cccccc; border-left-color:#cccccc; border-top-style:solid; border-right-style:solid; border-bottom-style:solid; border-left-style:solid;&quot;&gt;&lt;p&gt;&lt;span style=&quot; font-family:'arial','helvetica','sans-serif'; font-size:16px; color:#000000; background-color:#eeeeee;&quot;&gt;Obese Class III&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td bgcolor=&quot;#eeeeee&quot; style=&quot; padding-left:3; padding-right:3; padding-top:3; padding-bottom:3; border-top:1px; border-right:1px; border-bottom:1px; border-left:1px; border-top-color:#cccccc; border-right-color:#cccccc; border-bottom-color:#cccccc; border-left-color:#cccccc; border-top-style:solid; border-right-style:solid; border-bottom-style:solid; border-left-style:solid;&quot;&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-family:'arial','helvetica','sans-serif'; font-size:16px; color:#000000; background-color:#eeeeee;&quot;&gt;&amp;gt; 40&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image: url(:/resource/question (1).png);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QWidget" name="widget_11" native="true">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(226, 238, 245);</string>
+          </property>
+          <widget class="QGroupBox" name="groupBox_3">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>40</y>
+             <width>341</width>
+             <height>221</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Arial Black</family>
+            </font>
+           </property>
+           <property name="title">
+            <string>Daily calorie needs based on activity level</string>
+           </property>
+           <widget class="QScrollArea" name="scrollArea4">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>20</y>
+              <width>321</width>
+              <height>191</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Sunken</enum>
+            </property>
+            <property name="lineWidth">
+             <number>1</number>
+            </property>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAsNeeded</enum>
+            </property>
+            <property name="horizontalScrollBarPolicy">
+             <enum>Qt::ScrollBarAsNeeded</enum>
+            </property>
+            <property name="sizeAdjustPolicy">
+             <enum>QAbstractScrollArea::AdjustIgnored</enum>
+            </property>
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents_4">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>319</width>
+               <height>189</height>
+              </rect>
+             </property>
+             <widget class="QTableWidget" name="caloriesDailyTableWidget">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>321</width>
+                <height>191</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="verticalScrollBarPolicy">
+               <enum>Qt::ScrollBarAsNeeded</enum>
+              </property>
+              <property name="horizontalScrollBarPolicy">
+               <enum>Qt::ScrollBarAsNeeded</enum>
+              </property>
+              <property name="sizeAdjustPolicy">
+               <enum>QAbstractScrollArea::AdjustIgnored</enum>
+              </property>
+              <property name="autoScroll">
+               <bool>true</bool>
+              </property>
+              <property name="editTriggers">
+               <set>QAbstractItemView::NoEditTriggers</set>
+              </property>
+              <property name="textElideMode">
+               <enum>Qt::ElideLeft</enum>
+              </property>
+              <property name="verticalScrollMode">
+               <enum>QAbstractItemView::ScrollPerPixel</enum>
+              </property>
+              <property name="horizontalScrollMode">
+               <enum>QAbstractItemView::ScrollPerPixel</enum>
+              </property>
+              <property name="gridStyle">
+               <enum>Qt::SolidLine</enum>
+              </property>
+              <attribute name="verticalHeaderDefaultSectionSize">
+               <number>40</number>
+              </attribute>
+              <row>
+               <property name="text">
+                <string>Little/no exercise</string>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial Black</family>
+                </font>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>Light exercise</string>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial Black</family>
+                </font>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>Moderate exercise
+ (3-5 days/wk)</string>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial Black</family>
+                </font>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>Very active
+ (6-7 days/wk)</string>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial Black</family>
+                </font>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>Extra active
+ (very active &amp; physical job)</string>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial Black</family>
+                </font>
+               </property>
+              </row>
+              <column>
+               <property name="text">
+                <string>CALORIES</string>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial Black</family>
+                </font>
+               </property>
+              </column>
+              <item row="0" column="0">
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                </font>
+               </property>
+              </item>
+              <item row="1" column="0">
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                </font>
+               </property>
+              </item>
+              <item row="2" column="0">
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                </font>
+               </property>
+              </item>
+              <item row="3" column="0">
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                </font>
+               </property>
+              </item>
+              <item row="4" column="0">
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                </font>
+               </property>
+              </item>
+             </widget>
+            </widget>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="layoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>271</width>
+             <height>32</height>
+            </rect>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_10">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_18">
+              <property name="font">
+               <font>
+                <family>Arial Black</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(38, 50, 56);</string>
+              </property>
+              <property name="text">
+               <string>BMR = </string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLabel" name="totalBMRLabel">
+              <property name="font">
+               <font>
+                <family>Arial Black</family>
+                <pointsize>15</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;
+border: 1px solid rgb(218, 218, 218);</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QLabel" name="label_34">
+              <property name="font">
+               <font>
+                <family>Arial Black</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(38, 50, 56);</string>
+              </property>
+              <property name="text">
+               <string>Calories/day</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="2">
+         <widget class="QWidget" name="widget_10" native="true">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(251, 224, 224);</string>
+          </property>
+          <widget class="QWidget" name="layoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>20</y>
+             <width>701</width>
+             <height>231</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item>
+             <widget class="QLabel" name="label_24">
+              <property name="styleSheet">
+               <string notr="true">image: url(:/resource/bathroom-scale (1).png);</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QGridLayout" name="gridLayout_8">
+              <item row="0" column="0">
+               <layout class="QGridLayout" name="gridLayout_7">
+                <item row="1" column="0">
+                 <widget class="QLabel" name="label_20">
+                  <property name="font">
+                   <font>
+                    <family>Arial Black</family>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(38, 50, 56);</string>
+                  </property>
+                  <property name="text">
+                   <string>HEIGHT</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1" colspan="2">
+                 <widget class="QComboBox" name="ageComboBox">
+                  <property name="font">
+                   <font>
+                    <family>Arial</family>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(255, 255, 255);
+border: 1px solid rgb(218, 218, 218);</string>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>1</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>2</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>3</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>4</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>5</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>6</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>7</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>8</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>9</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>10</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>11</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>12</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>13</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>14</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>15</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>16</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>17</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>18</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>19</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>20</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>21</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>22</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>23</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>24</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>25</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>26</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>27</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>28</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>29</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>30</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>31</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>32</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>33</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>34</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>35</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>36</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>37</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>38</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>39</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>40</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>41</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>42</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>43</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>44</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>45</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>46</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>47</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>48</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>49</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>50</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>51</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>52</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>53</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>54</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>55</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>56</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>57</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>58</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>59</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>60</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>61</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>62</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>63</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>64</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>65</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>66</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>67</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>68</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>69</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>70</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>71</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>72</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>73</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>74</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>75</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>76</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>77</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>78</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>79</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>80</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>81</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>82</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>83</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>84</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>85</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>86</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>87</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>88</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>89</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>90</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>91</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>92</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>93</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>94</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>95</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>96</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>97</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>98</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>99</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>100</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item row="1" column="1" colspan="2">
+                 <widget class="QDoubleSpinBox" name="heightDoubleSpinBox">
+                  <property name="font">
+                   <font>
+                    <family>Arial</family>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(255, 255, 255);
+border: 1px solid rgb(218, 218, 218);</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="0">
+                 <widget class="QLabel" name="label_21">
+                  <property name="font">
+                   <font>
+                    <family>Arial Black</family>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(38, 50, 56);</string>
+                  </property>
+                  <property name="text">
+                   <string>WEIGHT</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="1">
+                 <widget class="QRadioButton" name="maleRadioButton">
+                  <property name="font">
+                   <font>
+                    <family>Arial Black</family>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(38, 50, 56);</string>
+                  </property>
+                  <property name="text">
+                   <string>MALE </string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="things.qrc">
+                    <normaloff>:/resource/man.png</normaloff>:/resource/man.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>30</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="0">
+                 <widget class="QLabel" name="label_22">
+                  <property name="font">
+                   <font>
+                    <family>Arial Black</family>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(38, 50, 56);</string>
+                  </property>
+                  <property name="text">
+                   <string>GENDER</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label_19">
+                  <property name="font">
+                   <font>
+                    <family>Arial Black</family>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(38, 50, 56);</string>
+                  </property>
+                  <property name="text">
+                   <string>AGE</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="2">
+                 <widget class="QRadioButton" name="femaleRadioButton">
+                  <property name="font">
+                   <font>
+                    <family>Arial Black</family>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(38, 50, 56);</string>
+                  </property>
+                  <property name="text">
+                   <string>FEMALE</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="things.qrc">
+                    <normaloff>:/resource/woman.png</normaloff>:/resource/woman.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>30</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="1" colspan="2">
+                 <widget class="QLineEdit" name="weightForBMI_RLineEdit">
+                  <property name="font">
+                   <font>
+                    <family>Arial</family>
+                   </font>
+                  </property>
+                  <property name="toolTip">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enter your weight&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;
+border: 1px solid rgb(218, 218, 218);</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="1" column="0">
+               <widget class="QPushButton" name="calculateBMI_RPushButton">
+                <property name="font">
+                 <font>
+                  <family>Arial Black</family>
+                  <pointsize>9</pointsize>
+                  <italic>false</italic>
+                  <fontweight>Black</fontweight>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton#calculateBMI_RPushButton {
+float: right;
+border: 1px solid rgb(218, 218, 218);
+font: 900 9pt &quot;Arial Black&quot;;
+margin-right: 3%;
+margin-top: 5px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+padding: 5px 9px;
+font-size: 1.2em;
+background-color: rgb(246, 246, 246);
+text-shadow: #454545 0 0 2px;
+color: rgb(38, 50, 56);
+}
+QPushButton#calculateBMI_RPushButton:pressed {
+background-color: rgb(218, 218, 218);
+border-style: inset;
+}</string>
+                </property>
+                <property name="text">
+                 <string>CALCULATE</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QChartView</class>
+   <extends>QGraphicsView</extends>
+   <header location="global">QtCharts</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="things.qrc"/>
+ </resources>
+ <connections/>
+</ui>
